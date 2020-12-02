@@ -445,7 +445,7 @@ bell cote
 bib
 bicycle-built-for-two
 bikini
-binder
+laptop
 binoculars
 birdhouse
 boathouse
@@ -479,7 +479,7 @@ carousel
 carpenter's kit
 carton
 car wheel
-cash machine
+laptop
 cassette
 cassette player
 castle
@@ -526,7 +526,7 @@ crutch
 cuirass
 dam
 desk
-desktop computer
+computer
 dial telephone
 diaper
 digital clock

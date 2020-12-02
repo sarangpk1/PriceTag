@@ -86,7 +86,7 @@ public class userData extends AppCompatActivity {
             public void onClick(View view) {
                 fAuth.signOut();
                 startActivity(new Intent(userData.this, account.class));
-           //     finish();
+                finish();
             }
         });
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.nav_view);

@@ -79,14 +79,6 @@ public class camPage extends AppCompatActivity {
     private static final int CAMERA_REQEUST_CODE = 10001;
     public static final int RequestPermissionCode = 1;
     @Override
-    public void onBackPressed()
-    {
-        super.onBackPressed();
-       // startActivity(new Intent(this, MainActivity.class));
-        finish();
-
-    }
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.camera_activity);
@@ -280,9 +272,9 @@ public class camPage extends AppCompatActivity {
         switch (requestCode) {
             case RequestPermissionCode:
                 if (result.length > 0 && result[0] == PackageManager.PERMISSION_GRANTED) {
-                    Toast.makeText(camPage.this, "Permission Granted, Now your application can access CAMERA.", Toast.LENGTH_LONG).show();
+//                    Toast.makeText(camPage.this, "Permission Granted, Now your application can access CAMERA.", Toast.LENGTH_LONG).show();
                 } else {
-                    Toast.makeText(camPage.this, "Permission Canceled, Now your application cannot access CAMERA.", Toast.LENGTH_LONG).show();
+//                    Toast.makeText(camPage.this, "Permission Canceled, Now your application cannot access CAMERA.", Toast.LENGTH_LONG).show();
                 }
                 break;
         }

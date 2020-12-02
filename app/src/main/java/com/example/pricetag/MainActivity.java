@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         fAuth=FirebaseAuth.getInstance();
         if(fAuth.getCurrentUser()!=null){
             startActivity(new Intent(getApplicationContext(),   camPage.class));
-
+            finish();
         }
         Button reg = findViewById(R.id.register);
         Button log = findViewById(R.id.signin);

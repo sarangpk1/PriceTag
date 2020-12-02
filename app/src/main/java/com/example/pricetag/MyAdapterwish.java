@@ -8,11 +8,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
+import static com.example.pricetag.R.drawable.ddaa;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.google.android.material.transition.Hold;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -64,6 +65,8 @@ public class MyAdapterwish extends RecyclerView.Adapter<MyAdapterwish.MyAdapterV
         });
         if(!p.getImage().equals(""))
         Glide.with(parent.getContext()).load(p.getImage()).into(holder.image);
+        else
+            holder.image.setImageResource(ddaa);
         holder.remove.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
